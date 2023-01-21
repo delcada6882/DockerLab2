@@ -1,0 +1,12 @@
+div(id='niceForm')
+    form(action="/new-user", method="post") 
+        p(id="formHeader") New User!
+        label userName:
+        input(type="text", name="username" id="userName" required)
+        label(for="name") Name:
+        input(type="text", name="name", placeHolder=Name required)
+        label Email:
+        input(type="email", name="email" id="email" required)
+        label(for="age") Age:
+        input(type="text", name="age", placeHolder=Age required)
+        button(type="submit") Submit

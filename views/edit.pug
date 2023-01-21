@@ -1,0 +1,20 @@
+html 
+    head
+        title EditUser 
+        link(rel="stylesheet", href ="/style.css", type='text/css')
+    body(id="special")
+        div(id="niceForm")
+            form(action="/users/" + userName + "/edited", method="post")
+                p(id="formHeader") edit #{userName}
+                label(for="editUserName") New UserName:
+                input(type="text", name="editUserName", placeHolder=userName required)
+                label(for="editName") New Name:
+                input(type="text", name="editName", placeHolder=Name required)
+                label(for="editEmail") New Email:
+                input(type="email", name="editEmail", placeHolder=Email required)
+                label(for="editAge") New Age:
+                input(type="text", name="editAge", placeHolder=Age required)
+                button(type="submit") Submit
+
+
+    include footer.pug

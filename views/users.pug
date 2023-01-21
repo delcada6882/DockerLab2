@@ -1,0 +1,12 @@
+html 
+    head
+        title=userYouClickedOn 
+        link(rel="stylesheet", href ="/style.css", type='text/css')
+    body 
+        h1(class='bigHead')=userYouClickedOn 
+        p This is #{userYouClickedOn}. Their real name is #{Name} and you can contact them at #{Email}. They're #{Age} years old.
+        p P.S. They're UID is #{ID}
+
+        br
+        a(href="/users" class="BackToUsers") Back to the Users
+        include footer.pug

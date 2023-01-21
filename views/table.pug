@@ -1,0 +1,27 @@
+html 
+    head 
+        title working
+        link(rel="stylesheet", href ="/style.css", type='text/css')
+    body(id="tableItem")
+        a(href="/" class="goToNewUser") Create New User
+        table 
+            tbody 
+                tr 
+                    th User Name 
+                    th Name 
+                    th Email
+                    th age
+                    each val in usersRead
+                        tr 
+                            td 
+                                a(href="/users/"+val.userName class="userNameForCSS") #{val.userName}
+                            td #{val.Name}
+                            td #{val.Email}
+                            td #{val.Age}
+                            td(class="editAndDel")
+                                a(href="/users/"+val.userName+"/edit") edit
+                                br
+                                a(href="/users/"+val.userName+"/delete") delete
+
+        
+        include footer.pug

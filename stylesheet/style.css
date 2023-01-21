@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    font-family: 'Lato';
+}
+#special {
+    font-family: sans-serif;
+    background-color: #FBFBFF;
+    color: #0A0A0A;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #EF626C;
+    /* height: 150px; */
+    text-align: center;
+    align-items: center;
+}
+li {
+    font-weight: 100;
+}
+
+.bigHead {
+    font-size: 100px;
+}
+
+#niceForm {
+    background-color: #01BFF4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 4%;
+}
+form {
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    padding: 100px;
+    margin: 50px;
+    border-radius: 20px;
+    z-index: 100;
+    margin-bottom: 60px;
+    width: 20%;
+}
+input {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #F27D85;
+    outline: none;
+    width: 100%;
+}
+button {
+    background-color: #01BFF4;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #00a0cc;
+}
+input[type="text"]:focus {
+    background-color: white;
+    border-color: black;
+}
+input[type="text"]:valid {
+    background-color: white;
+    border-color: #20BF55;
+}
+input[type="email"]:valid {
+    background-color: white;
+    border-color: #20BF55;
+
+}
+input[type="email"]:invalid {
+    border-color: #F27D85;
+}
+table {
+    z-index: 100;
+    border-collapse: collapse;
+    transform: scale(1.25);
+    margin-bottom: 12vh;
+}
+td {
+    border: 1px solid black;
+    padding: 15px;
+    background-color: white;
+}
+.footer {
+    margin: 30px;
+    color: white;
+}
+#tableItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #01BFF4;
+}
+#anchorSpec {
+    font-size: 350px;
+    font-weight: 900;
+    position:absolute;
+    z-index: 10;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 7%;
+    transition: 0.25s;
+    text-align: center;
+    height: 10px;
+    right: 0%;
+    top: -3%;
+}
+#anchorSpec:hover {
+    cursor: pointer;
+    transition: 0.25s;
+    z-index: 101;
+    color: #EF626C;
+    transform: scale(1.05);
+}
+#formHeader {
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    bottom: 30px;
+}
+.editAndDel {
+    text-align: center;
+    font-weight: 600;
+}
+.editAndDel a {
+    text-decoration: none;
+    color: #0A0A0A;
+}
+.editAndDel a:nth-child(1):hover {
+    color: #EF8354;
+}
+.editAndDel a:nth-child(3):hover {
+    color: #EF626C;
+}
+.userNameForCSS {
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+.userNameForCSS:hover {
+    cursor: pointer;
+    color: #01BFF4;
+}
+.goToNewUser {
+    position: absolute;
+    text-align: center;
+    top: 30vh;
+    color: #FBFBFF;
+    text-decoration: none;
+    font-size: 200px;
+    font-weight: 900;
+    z-index: 10;
+    transition: 0.25s;
+}
+.goToNewUser:hover {
+    transition: 0.25s;
+    z-index: 101;
+    color: #EF626C;
+    transform: scale(1.08);
+}
+.backToUsers {
+    text-decoration: none;
+    color: #0A0A0A;
+    font-weight: 700;
+}
+.backToUsers:hover {
+    text-decoration: none;
+    color: #00a0cc;
+    font-weight: 700;
+}
